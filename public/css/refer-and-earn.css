@@ -1,0 +1,135 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.sec-refer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 81px 30px;
+}
+.img-con{
+    flex-basis: 50%;
+}
+.img-con img{
+    border-radius: 17px;
+}
+.con-refer{
+    flex-basis: 50%;
+    margin: 31px;
+}
+.heading{
+    display: flex;
+    font-size: 2.6rem;
+    color: rgb(35,189,196);
+}
+.heading h1{
+    margin-top: 0;
+}
+.earn {
+    position: relative;
+    top: 54px;
+    left: -82px;
+    border-bottom: 2px solid rgb(35,189,196);
+    width: 100%;
+    margin-bottom: 93px;
+}
+.refer-txt{
+    font-size: 1.5rem;
+    color: dimgray;
+}
+
+.sec-form{
+    display: flex;
+    justify-content: space-between;
+}
+.det{
+    margin: 36px;
+}
+.det-heading{
+    color: rgb(35,189,196);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.form{
+    flex-basis: 60%;
+    margin: 30px
+}
+.form-img-con{
+    flex-basis: 27%;
+}
+.inp-parent{
+    display: flex;
+    width: 78%;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+#fname{
+    flex-basis: 100%;
+}
+#mob,
+#email{
+    flex-basis: 44.4%;
+}
+input{
+    padding: 5px 12px;
+    border-radius: 13px;
+    border: 2px solid rgb(35,189,196);
+    margin: 4px 0px;
+}
+#ffname{
+    flex-basis: 100%;
+}
+
+#fmob{
+    flex-basis: 44%;
+}
+
+@media screen and (max-width: 765px) {
+    .sec-refer{
+        display: block;
+        margin: 4px;
+    }
+    .con-refer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .refer-txt{
+        font-size: 1.3rem;
+        margin: auto;
+        width: 93%;
+    }
+    .sec-form{
+        display: block;
+    }
+    .heading{
+        zoom: 0.85;
+        position: relative;
+        left: 19px;
+        width: fit-content;
+    }
+    .form{
+        margin: 0;
+    }
+    .det{
+        width: fit-content;
+        margin: 10px;
+        margin-top: -2px;
+    }
+    .inp-parent{
+        width: 92%;
+    }
+    .inp-parent input{
+        flex-basis: 92% !important;
+    }
+    form{
+        margin: 46px 0px;
+    }
+    .form .heading{
+        margin-top: 40px;
+        margin-bottom: -40px;
+    }
+}

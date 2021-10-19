@@ -1,0 +1,79 @@
+.auth-main,.auth-form {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+  
+}
+
+.auth-main {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.auth-input {
+ padding: 13px;
+ background: #fafbfe;
+ border-radius: 5px;
+ outline: none;
+ border: none;
+ border: 0.1px solid #ccc;
+ width: 250px;
+ margin-bottom: 2rem;
+ color: inherit;
+ font-family: inherit;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  left:0 !important;
+  font-size: 13px !important;
+  font-family: sans-serif !important;
+
+}
+
+select {
+  width: 280px !important;
+}
+
+input::placeholder{
+  font-weight: 100;
+  font-family: sans-serif;
+}
+
+.auth-password {
+  display: flex;
+  position: relative;
+}
+
+.emailLink,.failure {
+  padding: 20px;
+  border: 1px solid #28a745;
+  color:#28a745;
+  border-radius: 6px;
+}
+
+.failure {
+  border: 1px solid red;
+  color: red;
+}
+
+.auth-password i {
+  position: absolute;
+  right:0%;
+  top:0%;
+  padding: 13px;
+  cursor: pointer;
+}
+.auth-button {
+  padding: 10px;
+  min-width: 100%;
+  max-width: 100%;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #727cf5;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-family: sans-serif;
+  margin-bottom: 2rem;
+}

@@ -1,0 +1,200 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: gotham;
+    color: #303030;
+}
+.blue{
+    color: rgb(35,189,196);
+}
+.blue-bold{
+    font-weight: 900;
+    color: rgb(30 159 165);
+}
+
+
+h1.section-1{
+    margin: auto;
+    width: fit-content;
+    font-size: 3.4rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 41px;
+    margin-bottom: 41px;
+}
+
+.con-story{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 89%;
+    margin-bottom: 80px;
+}
+.img-con {
+    flex-basis: 274%;
+    margin: 45px;
+}
+.img-con img{
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+}
+.story-text{
+    flex-basis: 261%;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+/* section 2 */
+
+.our-values{
+    background-image: url(/public/assets/our-values/pic2.png);
+    padding: 36px;
+}
+
+.val-hed{
+    height: 169px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: fit-content;
+    left: 76px;
+    font-size: 2rem;
+    color: #fff;    
+}
+.val-head-con{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    position: relative;
+    top: -25px;
+    left: 0px; 
+}
+.count{
+    font-size: 6rem;
+    font-weight: 900;
+    color: rgb(211,242,243);
+}
+.con-values{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.con-values-child{
+    width: fit-content;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    margin: 14px;
+}
+.value-txt{
+    width: 263px;
+    position: relative;
+    top: -15px;
+    padding-left: 149px;
+    border-bottom: 2px solid rgb(22 183 188);
+    padding-bottom: 5px;
+}
+.title{
+    position: absolute;
+    left: 75px;
+    font-size: 2.4rem;
+    font-weight: 900;
+    top: 46px;
+}
+
+footer{
+    height: 20px;
+    background: rgb(35,189,196);
+}
+
+
+/* why us container */
+
+.con-why-us{
+    color: rgb(62,66,75);
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    font-size: 2.3rem;
+    margin: 30px;
+}
+.light{
+    margin-right: 11px;
+    font-weight: 400;
+}
+.con-why-us h2.blue{
+    font-weight: 900;
+}
+.why-subheading{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    word-spacing: 4px;
+}
+.why-light{
+    font-weight: 500;
+}
+.why-parent{
+    display: flex;
+    justify-content: space-around;
+}
+.why-child{
+    display: flex;
+    width: 270px;
+    font-size: 1.4rem;
+}
+.why-child h4{
+    position: relative;
+    width: 148px;
+    left: -75px;
+    line-height: 19px;
+}
+.btn-con{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.btn-con button{
+    padding: 7px 57px;
+    background-color: rgb(35,189,196);
+    border: none;
+    border-radius: 36px;
+    font-size: 2rem;
+    color: white;
+}
+
+
+@media screen and (max-width: 765px) {
+    body{
+        zoom: 0;
+    }
+    h1.section-1{    
+        font-size: 1.6rem;
+        margin-top: 24px;
+        text-align: center;
+        width: 90%;
+    }
+    .con-story{
+        flex-direction: column;
+        justify-content: center;    
+    }
+    .img-con{
+        margin: 0;
+    }
+    .val-hed{
+        left: 0;
+    }
+    .con-values{
+        zoom: 0.6;
+    }
+    .title {
+        left: 94px;
+    }
+    .value-txt{
+        padding-left: 179px;
+    }
+}

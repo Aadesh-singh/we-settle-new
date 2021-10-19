@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: gotham;
+}
+
+.con-story{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 89%;
+    margin: 50px;
+}
+.img-con {
+    flex-basis: 260%;
+    margin: 24px;
+}
+.img-con img{
+    width: 100%;
+    border-radius: 15px;
+    height: 100%;
+}
+.story-text{
+    flex-basis: 261%;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.story-head{
+    display: flex;
+    flex-direction: column;
+    color: rgb(35,189,196);
+    font-size: 2.7rem;
+    font-weight: 900;
+    border-bottom: 2px solid rgb(35,189,196);
+    width: 66%;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+}
+.comm{
+    position: relative;
+    left: 10px;
+}
+
+/* secton 2 */
+
+.lot-more{
+    background: rgb(156,225,228);
+}
+.top-icon{
+    
+    text-align: center;
+    font-size: 2rem;
+
+}
+.tow-con-parent{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+.two-con{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    font-size: 4.4rem;
+    margin: 19px;
+    color: rgb(52 182 187);
+}
+.two h4{
+    margin: 8px 0px;
+    font-weight: 600;
+}
+.lot-img-con{
+    width: 302px;
+    margin: auto;
+}
