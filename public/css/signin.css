@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(211,242,243);
+    padding-left: 15px;
+    border-radius: 15px;
+    color: rgb(35,189,195);
+}
+
+
+input{
+    width: 84%;
+    padding: 8px;
+    margin: 10px 32px;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    border: 1.5px solid rgb(35,189,195);
+}
+.cross{
+    position: absolute;
+    right: 40px;
+    font-size: 1.3rem;
+    top: 30px;
+    color: rgb(35,189,195);
+}
+
+input[type="button"]{
+    background-color: rgb(35,189,195);
+    color: white;
+}
+a {
+    position: relative;
+    right: -70%;
+    font-size: 1.2rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+    top: -5px;
+}
