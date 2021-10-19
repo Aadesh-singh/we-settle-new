@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/prop-details.css" />
+    <link rel="stylesheet" href="/public/css/wishlist.css" />
+    <title>Wishlist</title>
+  </head>
+  <body>
+    <section class="intro">
+      <nav>
+        <div class="name">
+          <span>WeSettle</span>
+          <span class="logo"
+            ><img
+              src="/public/assets/images/logo.png"
+              height="55px"
+              width="39px"
+              alt=""
+          /></span>
+        </div>
+        <div class="left">
+          <span class="blue"><i class="fab fa-reddit"></i></span>
+          <span class="color-black username"></span>
+        </div>
+        <div id="bars" class="color-black"><i class="fas fa-bars"></i></div>
+        <div class="side-menu right">
+          <span id="cross">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+          <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="/login" class="auth">Login</a></li>
+            <li><a href="/register" class="auth">Signup</a></li>
+            <li><a href="#" class="none logout">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section class="wishlist-container">
+      <h2>Your Wishlist</h2>
+      <p class="no"></p>
+      <table cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Poperty</th>
+            <th>City</th>
+            <th>Area</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <script src="/public/js/wishlist.js"></script>
+      <script src="/public/script.js"></script>
+      <script src="/public/js/user.js"></script>
+    </section>
+  </body>
+</html>

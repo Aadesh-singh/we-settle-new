@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="https://icons8.com/icon/ziDFF8ChjxJb/cctv"></a>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/prop-details.css">
+    <link rel="stylesheet" href="/public/css/filtered-props.css">
+    <title>WeSettle</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src *;img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+</head>
+<body>
+    <section class="intro">
+        <nav>
+            <div class="name">
+                <span>WeSettle</span>
+                <span class="logo"><img src="/public/assets/images/logo.png" height="55px" width="39px" alt=""></span>
+            </div>
+            <div class="left">
+                <span class="blue"><i class="fab fa-reddit"></i></span>
+                <span class="color-black username"></span>
+            </div>
+            <div id="bars" class="color-black"><i class="fas fa-bars"></i></div>
+            <div class="side-menu right">
+                <span id="cross">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </span>
+               <ul>
+                   <li><a href="/">home</a></li>
+                   <li><a href="/login" class="auth">Login</a></li>
+                   <li><a href="/register" class="auth">Signup</a></li>
+                   <li><a href="/wishlist" class="none authenticated">Wishlist</a></li>
+                   <li><a href="#" class="none logout">Logout</a></li>
+               </ul>
+            </div>
+        </nav>
+
+    
+    </section>
+
+    <div class="none"><i class="fas fa-sliders-h"></i></div>
+    <aside>
+        <span class="crs">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </span>
+        <ul>
+            <li>FILTERS</li>
+            <li class="right1"><a href="#" class="clear">clear All</a></li>
+        </ul>
+        <!-- <div class="prop-type">
+            <div class="hed">PROPERTY TYPE</div>
+            <div class="input-con">
+                <input type="radio" name="prop-type" id="" value="PG & Hostels">PG & Hostels</input>
+            </div>
+            <div class="input-con">
+                <input type="radio" name="prop-type" id="" value="Managed Apartments">Managed Apartments
+            </div>
+        </div> -->
+        <div class="prop-type">
+            <div class="hed">SORT BY</div>
+            <div class="input-con">
+                <input type="radio" class="sortPrice" name="sort" id="" value="lpf">Lowest Price First
+            </div>
+            <div class="input-con">
+                <input type="radio" class="sortPrice" name="sort" id="" value="hpf">Highest Price First
+            </div>
+        </div>
+        <div class="prop-type locality-container">
+            <div class="hed">LOCALITY</div>
+            <template class="locality-template">
+                <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Bannerghatta Road"><label for="" class="lab"></label>
+            </div>
+            </template>
+            <!-- <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Bannerghatta Road">Bannerghatta Road
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="BTM Layout">BTM Layout
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Electronic City Phase 1">Electronic City Phase 1
+            </div> -->
+            <!-- <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Electronic City Phase 2">Electronic City Phase 2
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Hosur Road">Hosur Road
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="HSR Layout">HSR Layout
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="JP Nagar">JP Nagar
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Kengeri">Kengeri
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Koramangala">Koramangala
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Kumaraswamy Layout">Kumaraswamy Layout
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Lalbagh Road">Lalbagh Road
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Mahadevapura">Mahadevapura
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Manyata Tech Park">Manyata Tech Park
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Marathahalli">Marathahalli
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Mathikere">Mathikere
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Rajankunte">Rajankunte
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Reva University">Reva University
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="RVCE">RVCE
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Sarjapur Road">Sarjapur Road
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="loc" id="" value="Soladevanahalli">Soladevanahalli
+            </div>
+            <button>Show <span>less</span></button> -->
+        </div>
+        <div class="prop-type">
+            <div class="hed">Price</div>
+            <div class="price">
+                ₹<span>8,199</span>-₹<span>28,699</span>
+            </div>
+            <div class="middle">
+                <div class="multi-range-slider">
+                    <input type="range" id="input-left" >
+                    <input type="range" id="input-right">
+            
+                    <div class="slider">
+                        <div class="track"></div>
+                        <div class="range"></div>
+                        <div class="thumb left"></div>
+                        <div class="thumb pright"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="price">
+                ₹<span> 8.20k</span>-₹<span>28.70k</span>
+            </div> -->
+        </div>
+        <div class="prop-type">
+            <div class="hed">Gender</div>
+            <div class="input-con">
+                <input type="checkbox" class="gender-filter" name="gen" id="" value="male">Male
+            </div>
+            <div class="input-con">
+                <input type="checkbox" class="gender-filter" name="gen" id="" value="female">Female
+            </div>
+        </div>
+        <!-- <div class="prop-type">
+            <div class="hed">RESIDENCE TYPE</div>
+            <div class="input-con">
+                <input type="radio" name="rt" id="" value="Student">Student
+            </div>
+            <div class="input-con">
+                <input type="radio" name="gen" id="" value="working-professional">Working Professional
+            </div>
+        </div>
+        <div class="prop-type">
+            <div class="hed">OCCUPANCY</div>
+            <div class="input-con">
+                <input type="checkbox" name="occ" id="" value="Single">Single
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="occ" id="" value="Double">Double
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="occ" id="" value="Triple">Triple
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="occ" id="" value="Quadruple">Quadruple
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="occ" id="" value="Quintuple">Quintuple
+            </div>
+            
+            <button>Show <span>less</span></button>
+        </div>
+        <div class="prop-type">
+            <div class="hed">AMENITIES</div>
+            <div class="input-con">
+                <input type="checkbox" name="amenities" id="" value="Attached Balcony">Attached Balcony
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="amenities" id="" value="Attached Washroom">Attached Washroom
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="amenities" id="" value="Bed with Mattress">Bed with Mattress
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="amenities" id="" value="Ceiling Fans">Ceiling Fans
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="amenities" id="" value="Hot Water Supply">Hot Water Supply
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="amenities" id="" value="Quality Air Conditioners">Quality Air Conditioners
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="amenities" id="" value="Shared Washroom">Shared Washroom
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="amenities" id="" value="Sliding Window">Sliding Window
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="amenities" id="" value="Spacious Cupboard">Spacious Cupboard
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="amenities" id="" value="Study Table & Chair">Study Table & Chair
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="amenities" id="" value="Tubelight / LED">Tubelight / LED
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="amenities" id="" value="Wall Mirror">Wall Mirror
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="amenities" id="" value="Well placed Dustbins">Well placed Dustbins
+            </div>
+            
+            <button>Show <span>less</span></button>
+        </div>
+        <div class="prop-type">
+            <div class="hed">SERVICES</div>
+            <div class="input-con">
+                <input type="checkbox" name="services" id="" value="24x7 Security Surveillance">24x7 Security Surveillance
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="services" id="" value="Air Conditioning">Air Conditioning
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="services" id="" value="Biometric Enabled Entry">Biometric Enabled Entry
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="services" id="" value="CCTV Camera">CCTV Camera
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="services" id="" value="High-Speed WIFI">High-Speed WIFI
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="services" id="" value="Hot Water Supply">Hot Water Supply
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="services" id="" value="Hot and Delicious Meals">Hot and Delicious Meals
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="services" id="" value="In-House Cafeteria">In-House Cafeteria
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="services" id="" value="Laundry Service">Laundry Service
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="services" id="" value="Power Backup">Power Backup
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="services" id="" value="Professional Housekeeping">Professional Housekeeping
+            </div>
+            <div class="input-con">
+                <input type="checkbox" name="services" id="" value="Workout Zone">Workout Zone
+            </div>
+            
+            <button>Show <span>less</span></button>
+        </div> -->
+
+    </aside>
+
+    
+
+    <h1>YOUR SECOND HOME IN <span class="blue">DELHI</span></h1>
+    <h1 class="fp">FILTERED <span class="blue">PROPERTIES</span></h1>
+    <template class="residence">
+<div class="filtered-prop-child">
+            <div class="fil-img-con">
+                <img src="/public/assets/images/image-006.jpg" width="100%" height="100%" alt="">
+            </div>
+            <div class="loc-nav">
+                <div class="fil-loc">
+                    Kamla Nagar, North Campus
+                </div>
+                <div class="vm-btn">
+                    View More
+                </div>
+                <div class="bgp vm-btn">
+                    <span><i class="fas fa-user"></i></span>
+                    <span class="gender">boys/girls</span>
+                </div>
+            </div>
+            <div class="code"></div>
+            <div class="rent-parent-con">
+                <div class="rent-con">
+                    <span class="blue">Rent Starts</span>
+                    <span class="bg rent-price">₹22,000/mo*</span>
+                </div>
+                <div class="fes-icons">
+                    <!-- <span class="fes-icon"><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/25/000000/external-wifi-network-and-cloud-computing-flatart-icons-outline-flatarticons.png"></span>
+                    <span class="fes-icon"><img src="https://img.icons8.com/ios/25/000000/housekeeping.png"/></span>
+                    <span class="fes-icon"><img src="https://img.icons8.com/ios/25/000000/table.png"/></span>
+                    <span class="fes-icon">+5</span> -->
+                    <span class="icon-count"></span>
+                </div>
+            </div>
+        </div>
+        
+        </template>
+    <section class="filtered-props">
+
+    </section>
+
+
+    <footer>
+        <hr>
+        <div class="footer">
+            <div class="name">
+                <span>We<span class="blue">Settle</span></span></span>
+                <span class="logo"><img src="/public/assets/images/logo.png" height="55px" width="39px" alt=""></span>
+            </div>
+            <div>
+                <h1>FOOTER</h1>
+            </div>
+        </div>
+    </footer>
+    <script src="/public/js/user.js"></script>
+
+    <script src="/public/js/loader.js"></script>
+    <script src="/public/script.js"></script>
+    <script src="/public/js/filtered-props.js"></script>
+
+</body>
+</html>

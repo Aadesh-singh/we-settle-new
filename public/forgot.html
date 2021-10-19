@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/auth.css" />
+    <title>Wesettle Login</title>
+  </head>
+  <body>
+    <main class="auth-main">
+      <h2>Forgot Password</h2>
+      <div class="emailLink none">Change Password Link is sent to email</div>
+      <form class="auth-form">
+        <input
+          type="email"
+          name="email"
+          class="auth-input"
+          required
+          placeholder="Email"
+        />
+        <button class="auth-button" type="submit">SUBMIT</button>
+      </form>
+    </main>
+    <script src="/public/js/alert.js"></script>
+    <script>
+      const form = document.querySelector('.auth-form');
+      const emailLink = document.querySelector('.emailLink');
+      console.log(form, emailLink);
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        try {
+          const element = form.elements;
+          const email = element['email'].value;
+
+          if (!email) {
+            return tempAlert('Please fill all fields', 3000, true);
+          }
+          const res = await fetch('/api/v1/auth/forgot-password', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              email,
+            }),
+          });
+
+          const data = await res.json();
+          if (data.status === 'fail' || data.status === 'error') {
+            throw new Error(data?.message);
+          }
+          emailLink.classList.remove('none');
+        } catch (error) {}
+      });
+    </script>
+  </body>
+</html>

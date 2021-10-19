@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <link rel="stylesheet" href="/public/css/auth.css" />
+    <title>Wesettle Login</title>
+  </head>
+  <body>
+    <main class="auth-main">
+      <h2>Register</h2>
+      <div class="emailLink none">Activation link is sent to your email</div>
+      <p>
+        Already Have an account?
+        <a href="/login" style="color: blue; text-decoration: underline"
+          >Login</a
+        >
+      </p>
+      <form class="auth-form">
+        <input
+          type="text"
+          name="username"
+          required
+          placeholder="Username"
+          class="auth-input"
+        />
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Email"
+          class="auth-input"
+        />
+        <div class="auth-password">
+          <input
+            type="password"
+            name="password"
+            required
+            placeholder="Password"
+            class="auth-input"
+          />
+          <i class="fas fa-eye-slash passwordIcon"></i>
+        </div>
+        <input
+          type="number"
+          required
+          placeholder="Phone No"
+          name="phoneNo"
+          class="auth-input"
+        />
+        <select class="auth-input city" name="city">
+          <option value="">Select City</option>
+        </select>
+        <select class="auth-input" name="gender">
+          <option value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <input
+          type="text"
+          name="college"
+          placeholder="College"
+          class="auth-input"
+        />
+        <button class="auth-button" type="submit">REGISTER</button>
+      </form>
+    </main>
+    <script src="/public/js/alert.js"></script>
+    <script src="/public/js/city.js"></script>
+    <script src="/public/js/register.js"></script>
+    <script src="/public/js/password.js"></script>
+  </body>
+</html>
