@@ -50,3 +50,22 @@ input[type="button"]{
     background-color: rgb(35,189,195);
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 89%;
+
+    }
+    input{
+        margin-left: 0px;
+    }
+    input[type="phone"] {
+        width: 56%;
+    }
+    .flag{
+        left: 30px;
+    }
+}
