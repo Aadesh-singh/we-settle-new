@@ -1,0 +1,112 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(247,247,247);
+    color: rgb(88, 87, 87);
+}
+
+.blue{
+    color: rgb(111,194,201);
+}
+#one{
+    display: flex;
+    justify-content: space-between;
+}
+
+.det-img{
+    flex-basis: 60%;
+    position: relative;
+    top: -31px;
+}
+.det{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    position: relative;
+}
+
+.phone{
+    width: fit-content;
+    text-align: center;
+}
+
+.det div{
+    margin: 5px 0px;
+    font-weight: 900;
+}
+.log{
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    top: 60px;
+}
+
+.log span {
+    zoom: 2;
+}
+
+/* section2 */
+.ques-con{
+    width: 88%;
+    margin: 22px;
+    background-color: rgb(237,248,249);
+    padding: 27px;
+    position: relative;
+}
+.ques{
+    position: relative;
+    color: rgb(90, 157, 163);
+    font-size: 1.6rem;
+    margin-bottom: 13px;
+    font-weight: bolder;
+}
+.questions{
+    display: flex;
+}
+
+.ques-con span{
+    position: absolute;
+    right: 23px;
+    cursor: pointer;
+    zoom: 1.4;
+    padding: 20px;
+    top: -10px;
+}
+
+.hidded{
+    height: 0;
+    /* padding: 0; */
+    visibility: hidden;
+}
+
+#two h1{
+    text-align: center;
+    font-size: 4rem;
+}
+.ans{
+    font-size: 1.1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    #one{
+        zoom: 0.5;
+    }
+    #two h1{
+        font-size: 2.8rem;
+        margin-top: 93px;
+    }
+    .questions{
+        display: block;
+    }
+    .ques-con{
+        width: 84%;
+        margin: 0px;
+    }
+    .ques-con span{
+        right: -4px;
+    }
+}
