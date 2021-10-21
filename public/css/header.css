@@ -1,0 +1,93 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    color: #303030;
+}
+.blue{
+    color: rgb(35,189,196);
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li{
+    padding: 13px;
+    cursor: pointer;
+}
+
+li a{
+    text-decoration: none;
+    color: #303030;
+    font-size: 1.4rem;
+}
+.logo{
+    zoom: 1.5;
+}
+.bk-blue{
+    background-color: rgb(35,189,196);
+    border-radius: 35px;
+    padding: 9px 17px;
+}
+.bk-blue a{
+    color: white !important;
+}
+.parent{
+    display: flex;
+    justify-content: space-between;
+    width: 96px;
+    align-items: center;
+}
+
+.bars{
+    display: none;
+}
+
+li a:hover{
+    color: rgb(35,189,196);
+}
+.bk-blue:hover{
+    background-color: white;
+    border: 1px solid rgb(35,189,196);
+}
+.bk-blue a:hover{
+    color: rgb(35,189,196) !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    ul{
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+    .bars{
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+    .hidden{
+        display: none;
+    }
+    .bk-blue{
+        background-color: white;
+    }
+    .bk-blue a{
+        color: rgb(35,189,196) !important;
+    }
+    .wid{
+        width: 100%;
+    }
+    .bk-blue:hover{
+        background-color: white;
+        border: none;
+    }
+    .bk-blue a:hover{
+        color: #303030 !important;
+    }
+}
